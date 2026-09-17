@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GeoAI-for-Disaster — เฝ้าระวังฟ้าผ่าสนามไทยลีก 1</title>
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="layout">
+    <aside id="sidebar">
+      <header id="brand">
+        <h1>เฝ้าระวังฟ้าผ่า<span>ไทยลีก 1 · 2026-27</span></h1>
+        <div id="source-badge" class="badge" hidden></div>
+      </header>
+
+      <section class="panel" id="mode-panel">
+        <h2>โหมดแสดงผล</h2>
+        <div class="mode-switch">
+          <button type="button" id="mode-live" class="mode-btn active">สด</button>
+          <button type="button" id="mode-replay" class="mode-btn">Replay พายุจริง</button>
+        </div>
+        <div id="replay-controls" hidden>
+          <select id="replay-file" aria-label="เลือกเหตุการณ์"></select>
+          <div id="replay-clock" class="replay-clock">—</div>
+          <input type="range" id="replay-slider" min="0" max="0" step="30" value="0" aria-label="เลื่อนเวลา" />
+          <div class="replay-row">
+            <button type="button" id="replay-play" class="mode-btn">▶ เล่น</button>
+            <select id="replay-speed" aria-label="ความเร็ว">
+              <option value="1">1x (เวลาจริง)</option>
+              <option value="10">10x</option>
+              <option value="30" selected>30x</option>
+              <option value="60">60x</option>
+            </select>
+            <button type="button" id="replay-peak" class="mode-btn" title="ข้ามไปช่วงที่พายุเข้าใกล้สนามที่สุด">ช่วงใกล้สุด</button>
+          </div>
+          <p class="footnote" id="replay-note"></p>
+        </div>
+      </section>
+
+      <section id="summary" class="panel">
+        <h2>ภาพรวม</h2>
+        <div id="summary-grid" class="summary-grid"></div>
+      </section>
+
+      <section class="panel">
+        <h2>เกณฑ์ความปลอดภัย</h2>
+        <ul id="legend" class="legend"></ul>
+        <p class="footnote">
+          13 กม. (~8 ไมล์) คือเกณฑ์ NCAA สำหรับสั่งหยุดการแข่งขัน
+          และต้องเว้น 30 นาทีหลัง strike ครั้งสุดท้ายจึงจะกลับมาเล่นได้
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>ชั้นข้อมูล</h2>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-rings" checked />
+          <span>วงรัศมี (10 / 13 / 16 กม.)</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-strikes" checked />
+          <span>ฟ้าผ่าจริง (สนามที่เลือก 30 นาที · ทั่วประเทศ 60 นาที · กะพริบ = ภายใน 5 นาที)</span>
+        </label>
+        <label class="toggle">
+          <input type="checkbox" id="toggle-radar" checked />
+          <span>เรดาร์ฝน + cell ฝนแรง (≥ 40 dBZ)</span>
+        </label>
+        <p class="footnote">
+          เรดาร์ใช้เป็นสัญญาณเตือนล่วงหน้า (WATCH) เท่านั้น การสั่งหยุดใช้ข้อมูลฟ้าผ่า ·
+          Radar data © <a href="https://www.rainviewer.com" target="_blank" rel="noopener">RainViewer</a> ·
+          Lightning data © <a href="https://www.blitzortung.org" target="_blank" rel="noopener">Blitzortung.org</a> contributors
+          และ Xweather (เมื่อ quota ยังเหลือ)
+        </p>
+      </section>
+
+      <section class="panel panel-grow">
+        <h2>สนาม <span id="stadium-count" class="muted"></span></h2>
+        <ul id="stadium-list" class="stadium-list"></ul>
+      </section>
+
+      <footer id="status-bar">
+        <span id="last-update">กำลังโหลด…</span>
+      </footer>
+    </aside>
+
+    <main id="map"></main>
+  </div>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+  <script src="app.js"></script>
+</body>
+</html>

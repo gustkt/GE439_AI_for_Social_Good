@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-09-17T10:22:43Z",
+  "storm": {
+    "file": "capture_20260916T054352Z_storm.jsonl",
+    "date_thai": "16/09/2026",
+    "stadium": "Sam Ao Stadium",
+    "club": "PT Prachuap",
+    "strikes_total": 55,
+    "strikes_near_stadium": 47,
+    "sources": [
+      "xweather"
+    ],
+    "first_strike": "13:08",
+    "last_strike": "14:32",
+    "closest_km": 5.59,
+    "closest_time": "13:51",
+    "affected_stadiums": [
+      {
+        "stadium_id": 11,
+        "club": "PT Prachuap",
+        "name": "Sam Ao Stadium",
+        "strikes": 47,
+        "closest_km": 5.59,
+        "closest_at": "2026-09-16T06:51:00Z"
+      },
+      {
+        "stadium_id": 16,
+        "club": "Sukhothai",
+        "name": "Thalay Luang Stadium",
+        "strikes": 1,
+        "closest_km": 15.08,
+        "closest_at": "2026-09-16T07:32:05Z"
+      },
+      {
+        "stadium_id": 8,
+        "club": "Pattani",
+        "name": "Tinsulanonda Stadium (Songkhla)",
+        "strikes": 7,
+        "closest_km": 18.22,
+        "closest_at": "2026-09-16T07:07:09Z"
+      }
+    ],
+    "transitions": [
+      {
+        "time": "12:48",
+        "status": "ALL_CLEAR",
+        "status_thai": "ปลอดภัย",
+        "closest_km": null,
+        "strike_count": 0,
+        "speed_kmph": null,
+        "all_clear_seconds": null
+      },
+      {
+        "time": "13:08",
+        "status": "SUSPEND",
+        "status_thai": "สั่งหยุด",
+        "closest_km": 11.64,
+        "strike_count": 1,
+        "speed_kmph": null,
+        "all_clear_seconds": 1800
+      },
+      {
+        "time": "13:37",
+        "status": "DANGER",
+        "status_thai": "อันตราย",
+        "closest_km": 8.71,
+        "strike_count": 9,
+        "speed_kmph": 29.0,
+        "all_clear_seconds": 1762
+      },
+      {
+        "time": "14:21",
+        "status": "SUSPEND",
+        "status_thai": "สั่งหยุด",
+        "closest_km": 12.84,
+        "strike_count": 28,
+        "speed_kmph": 41.7,
+        "all_clear_seconds": 710
+      },
+      {
+        "time": "14:33",
+        "status": "ALL_CLEAR",
+        "status_thai": "ปลอดภัย",
+        "closest_km": 25.27,
+        "strike_count": 11,
+        "speed_kmph": null,
+        "all_clear_seconds": null
+      }
+    ],
+    "minutes_by_status": {
+      "SUSPEND": 41,
+      "DANGER": 44,
+      "ALL_CLEAR": 29
+    },
+    "nowcast_speed_min": 23.7,
+    "nowcast_speed_max": 105.7,
+    "nowcast_speed_median": 42.6,
+    "nowcast_bearing_busiest": 10.1,
+    "nowcast_speed_busiest": 45.7
+  },
+  "radar": {
+    "frames": 40,
+    "first_frame": "17/09/2026 08:40",
+    "last_frame": "17/09/2026 17:10",
+    "cells_total": 3040,
+    "cells_max_per_frame": 162,
+    "max_dbz": 65,
+    "closest_hotspot_km": 0.6,
+    "closest_hotspot_stadium": "True BG Stadium",
+    "closest_hotspot_time": "17/09 16:20",
+    "watch_exposures": 68,
+    "watch_stadiums": 10
+  },
+  "tests": {
+    "suites": {
+      "test_model": 21,
+      "test_blitzortung": 17,
+      "test_pipeline": 15,
+      "test_availability": 41,
+      "test_radar": 31,
+      "test_replay_view": 18
+    },
+    "total": 143
+  },
+  "stadiums_active": 16
+}

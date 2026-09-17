@@ -1,0 +1,311 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5973555,
+          14.3499561
+        ]
+      },
+      "properties": {
+        "club": "Ayutthaya United",
+        "stadium": "Ayutthaya Province Stadium",
+        "capacity": 5000,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6793388,
+          14.0006095
+        ]
+      },
+      "properties": {
+        "club": "Bangkok United",
+        "stadium": "True BG Stadium",
+        "capacity": 15114,
+        "league": "T1",
+        "status": "current",
+        "note": "shared"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.6793388,
+          14.0006095
+        ]
+      },
+      "properties": {
+        "club": "BG Pathum United",
+        "stadium": "True BG Stadium",
+        "capacity": 15114,
+        "league": "T1",
+        "status": "current",
+        "note": "shared"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          103.094364,
+          14.9658694
+        ]
+      },
+      "properties": {
+        "club": "Buriram United",
+        "stadium": "Chang Arena",
+        "capacity": 32600,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.8746229,
+          19.9569285
+        ]
+      },
+      "properties": {
+        "club": "Chiangrai United",
+        "stadium": "Singha Chiangrai Stadium",
+        "capacity": 12000,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.9564479,
+          13.3362003
+        ]
+      },
+      "properties": {
+        "club": "Chonburi",
+        "stadium": "Chonburi Daikin Stadium",
+        "capacity": 8680,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          98.9836195,
+          18.478663
+        ]
+      },
+      "properties": {
+        "club": "Lamphun Warriors",
+        "stadium": "Lamphun Warriors Stadium",
+        "capacity": 5179,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5985726,
+          7.2070863
+        ]
+      },
+      "properties": {
+        "club": "Pattani",
+        "stadium": "Tinsulanonda Stadium (Songkhla)",
+        "capacity": 35000,
+        "league": "T1",
+        "status": "current",
+        "note": "temporary venue"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.2446778,
+          6.8888493
+        ]
+      },
+      "properties": {
+        "club": "Pattani",
+        "stadium": "Rainbow Stadium (Pattani)",
+        "capacity": 12000,
+        "league": "T1",
+        "status": "future",
+        "note": "under renovation"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.5597583,
+          13.7153035
+        ]
+      },
+      "properties": {
+        "club": "Port",
+        "stadium": "PAT Stadium",
+        "capacity": 6250,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.7880161,
+          11.8174923
+        ]
+      },
+      "properties": {
+        "club": "PT Prachuap",
+        "stadium": "Sam Ao Stadium",
+        "capacity": 5000,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3236985,
+          15.0892323
+        ]
+      },
+      "properties": {
+        "club": "Rasisalai United",
+        "stadium": "Sisaket Provincial Stadium",
+        "capacity": 2500,
+        "league": "T1",
+        "status": "current",
+        "note": "verify"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.7698387,
+          13.5215992
+        ]
+      },
+      "properties": {
+        "club": "Ratchaburi",
+        "stadium": "Dragon Solar Park (Ratchaburi Stadium)",
+        "capacity": 10000,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          101.2354433,
+          12.6802345
+        ]
+      },
+      "properties": {
+        "club": "Rayong",
+        "stadium": "Rayong Province Stadium",
+        "capacity": 7500,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          104.3403721,
+          15.100956
+        ]
+      },
+      "properties": {
+        "club": "Sisaket United",
+        "stadium": "Sri Nakhon Lamduan Stadium",
+        "capacity": 11200,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          99.7934476,
+          17.0618846
+        ]
+      },
+      "properties": {
+        "club": "Sukhothai",
+        "stadium": "Thalay Luang Stadium",
+        "capacity": 8020,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          100.0169218,
+          15.3943942
+        ]
+      },
+      "properties": {
+        "club": "Uthai Thani",
+        "stadium": "Uthai Thani Province Stadium",
+        "capacity": 5500,
+        "league": "T1",
+        "status": "current",
+        "note": ""
+      }
+    }
+  ]
+}

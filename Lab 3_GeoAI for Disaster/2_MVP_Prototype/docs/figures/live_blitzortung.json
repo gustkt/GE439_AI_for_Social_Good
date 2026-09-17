@@ -1,0 +1,22 @@
+{
+  "window": "17/09/2026 17:18–17:20 น. (2 นาที)",
+  "minutes": 2.0,
+  "received_total": 861,
+  "per_minute": 424.90359475350164,
+  "in_region_total": 0,
+  "nearest_km": null,
+  "nearest_stadium": null,
+  "stored_total": 0,
+  "sources": {
+    "blitzortung": true,
+    "xweather": false
+  },
+  "summary": {
+    "DANGER": 0,
+    "SUSPEND": 0,
+    "WATCH": 7,
+    "NO_DATA": 0,
+    "ALL_CLEAR": 9,
+    "UNMONITORED": 0
+  }
+}
